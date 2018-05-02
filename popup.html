@@ -1,0 +1,206 @@
+<html>
+
+<head>
+    <script src="background.js" type='text/javascript'></script>
+    <style>
+        html,
+        body {
+            width: 640px;
+            background: #f0f0f0;
+        }
+
+        #partida {
+            width: 625px;
+            height: 70px;
+            background: #f6f6f6;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            border-left: 5px solid black;
+            margin-left: 5px;
+            margin-bottom: 10px;
+            transition: all 0.2s;
+        }
+
+        #partida:hover {
+            border-left: 5px solid #5d54e6;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.4);
+            transition: all 0.5s;
+        }
+
+        .times {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .time1 img {
+            height: 40px;
+            max-width: 40px;
+            margin-right: 5px;
+            margin-left: 5px;
+            flex: 0 0 23px;
+            float: left;
+        }
+
+        .time2 img {
+            height: 40px;
+            max-width: 40px;
+            margin-right: 5px;
+            margin-left: 5px;
+            flex: 0 0 23px;
+            float: left;
+        }
+
+        .versus {
+            height: 40px;
+            max-width: 40px;
+            margin-right: 5px;
+            margin-left: 5px;
+            float: left;
+            margin-top: 3px;
+        }
+
+        .time1 {
+            float: left;
+            margin-top: 3px;
+            height: 23px;
+        }
+
+        .time2 {
+            float: left;
+            margin-top: 3px;
+            height: 23px;
+        }
+
+        .nomeTime {
+            line-height: 40px;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: -0.009em;
+        }
+
+        .trofeu {
+            position: absolute;
+            margin-top: 5px;
+            right: 20px;
+
+        }
+
+        .trofeu_img {
+            height: 15px;
+            float: left;
+            margin-right: 5px;
+        }
+
+        .tournament {
+            float: left;
+            line-height: 15px;
+        }
+
+        .relogio {
+            position: absolute;
+            margin-top: 25px;
+            right: 20px;
+        }
+
+        .relogio_img {
+            height: 15px;
+            float: left;
+            margin-right: 5px;
+        }
+
+        .brasil {
+            height: 72px;
+            width: 5px;
+            position: absolute;
+            right: 11px;
+            margin-top: -1px;
+            background: url(http://www.carloszilio.com/images/galerias/galeria80/4g.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        .status_partida {
+            position: absolute;
+            margin-top: 45px;
+            right: 20px;
+        }
+
+        .md {
+            position: absolute;
+            left: 50%;
+        }
+
+        .score_time_a {
+            float: left;
+            margin-left: 5px;
+            margin-top: 10px;
+            line-height: 20px;
+            font-size: 15px;
+            background: #c3c3c3;
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: #565656;
+        }
+
+        .score_time_b {
+            float: left;
+            margin-right: 5px;
+            margin-top: 10px;
+            line-height: 20px;
+            font-size: 15px;
+            background: #c3c3c3;
+            padding: 2px 5px;
+            border-radius: 5px;
+            color: #565656;
+        }
+
+        .score {
+            position: absolute;
+            margin-top: 45px;
+            font-size: 12px;
+        }
+
+        .card_mapa {
+            font-size: 12px;
+            font-weight: normal;
+            background: #c3c3c3;
+            color: #565656;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            padding: 2px 5px;
+            border-radius: 5px;
+            /* display: inline-block; */
+            margin-left: 5px;
+            float: left;
+        }
+
+        /* .winner {
+            color: #5d54e6;
+            font-weight: 700;
+        } */
+
+        .ao_vivo {
+            position: absolute;
+            margin-top: 49px;
+            right: 105px;
+            height: 10px;
+            width: 10px;
+            background: red;
+            border-radius: 50%;
+            animation: neon 0.5s alternate infinite ease-in-out;
+        }
+
+        @keyframes neon {
+            0% {
+                background: white
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Principais jogos de CS GO mundial e do Brasil</h1>
+    <div id="resp"></div>
+</body>
+
+</html>
